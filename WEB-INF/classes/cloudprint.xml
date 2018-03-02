@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<cloudprint> 
+	<setting name="siteUrl" value="http://localhost:8080/cloudprint"/>  
+	<setting name="priceScale" value="2"/>  
+	<setting name="priceRoundType" value="roundHalfUp"/>  
+	<setting name="currencySign" value="￥"/>  
+	<setting name="currencyUnit" value="元"/>  
+	<setting name="accountLockTypes" value="member,admin"/>  
+	<setting name="accountLockCount" value="5"/>  
+	<setting name="accountLockTime" value="10"/>  
+	<setting name="safeKeyExpiryTime" value="1440"/>  
+	<setting name="productFileExtension" value="xls"/>  
+	<setting name="firmwareFileExtension" value="xml"/>  
+	<setting name="recordFileExtension" value="txt"/>  
+	<setting name="recordFilePath" value="/record/${.now?string('yyyyMMdd')}/"/>  
+	<setting name="cookiePath" value="/"/>  
+	<setting name="cookieDomain" value=""/>  
+	<setting name="adminUsername" value="admin"/>  
+	<setting name="adminPassword" value="password"/>  
+	<setting name="serverHost" value="tcp://127.0.0.1:61613"/>  
+	<setting name="serverUsername" value="admin"/>  
+	<setting name="serverPassword" value="password"/>  
+	<setting name="pushInterval" value="0,60000,120000,180000"/>
+	<setting name="expireInterval" value="172800000"/>
+	<setting name="serverNo" value="1"/>  
+	<setting name="serverCount" value="0"/>  
+
+	<template id="adminCommonJs" type="page" name="admin_common_js" templatePath="/admin/js/common.ftl" staticPath="/resources/admin/js/common.js"/>  
+</cloudprint>

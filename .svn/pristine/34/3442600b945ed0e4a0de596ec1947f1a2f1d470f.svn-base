@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<classpath>
+	<classpathentry kind="src" path="src"/>
+	<classpathentry kind="lib" path="WEB-INF/lib/activation-1.1.1.jar"/>
+	<classpathentry kind="lib" path="WEB-INF/lib/aliyun-openservices-1.0.10.jar"/>
+	<classpathentry kind="lib" path="WEB-INF/lib/antlr-2.7.7.jar"/>
+	<classpathentry kind="lib" path="WEB-INF/lib/aopalliance-1.0.jar"/>
+	<classpathentry kind="lib" path="WEB-INF/lib/asm-all-3.1.jar"/>
+	<classpathentry kind="lib" path="WEB-INF/lib/bcprov-jdk15on-147.jar"/>
+	<classpathentry kind="lib" path="WEB-INF/lib/c3p0-0.9.2.1.jar"/>
+	<classpathentry kind="lib" path="WEB-INF/lib/cglib-3.0.jar"/>
+	<classpathentry kind="lib" path="WEB-INF/lib/common-annotations.jar"/>
+	<classpathentry kind="lib" path="WEB-INF/lib/commons-beanutils-1.8.3.jar"/>
+	<classpathentry kind="lib" path="WEB-INF/lib/commons-codec-1.6.jar"/>
+	<classpathentry kind="lib" path="WEB-INF/lib/commons-collections-3.2.1.jar"/>
+	<classpathentry kind="lib" path="WEB-INF/lib/commons-fileupload-1.2.2.jar"/>
+	<classpathentry kind="lib" path="WEB-INF/lib/commons-io-2.2.jar"/>
+	<classpathentry kind="lib" path="WEB-INF/lib/commons-lang-2.6.jar"/>
+	<classpathentry kind="lib" path="WEB-INF/lib/commons-logging-1.1.1.jar"/>
+	<classpathentry kind="lib" path="WEB-INF/lib/commons-net-3.1.jar"/>
+	<classpathentry kind="lib" path="WEB-INF/lib/dom4j-1.6.1.jar"/>
+	<classpathentry kind="lib" path="WEB-INF/lib/freemarker-2.3.19.jar"/>
+	<classpathentry kind="lib" path="WEB-INF/lib/hamcrest-all-1.3.jar"/>
+	<classpathentry kind="lib" path="WEB-INF/lib/hibernate-3.6.10.jar"/>
+	<classpathentry kind="lib" path="WEB-INF/lib/hibernate-jpa-2.0-api-1.0.1.jar" sourcepath="D:/fujitsu/sofware/apache-maven-3.5.2-bin/mavenrepo/org/hibernate/javax/persistence/hibernate-jpa-2.0-api/1.0.1.Final/hibernate-jpa-2.0-api-1.0.1.Final-sources.jar"/>
+	<classpathentry kind="lib" path="WEB-INF/lib/hibernate-search-3.4.2.jar"/>
+	<classpathentry kind="lib" path="WEB-INF/lib/hibernate-validator-4.2.0.jar"/>
+	<classpathentry kind="lib" path="WEB-INF/lib/httpclient-4.2.3.jar"/>
+	<classpathentry kind="lib" path="WEB-INF/lib/httpcore-4.2.2.jar"/>
+	<classpathentry kind="lib" path="WEB-INF/lib/IKAnalyzer-3.2.8.jar"/>
+	<classpathentry kind="lib" path="WEB-INF/lib/im4java-1.4.0.jar"/>
+	<classpathentry kind="lib" path="WEB-INF/lib/jackson-annotations-2.1.4.jar"/>
+	<classpathentry kind="lib" path="WEB-INF/lib/jackson-core-2.1.4.jar"/>
+	<classpathentry kind="lib" path="WEB-INF/lib/jackson-databind-2.1.4.jar"/>
+	<classpathentry kind="lib" path="WEB-INF/lib/javassist-3.15.jar"/>
+	<classpathentry kind="lib" path="WEB-INF/lib/jaxen-1.1.1.jar"/>
+	<classpathentry kind="lib" path="WEB-INF/lib/jaxme-api-0.3.jar"/>
+	<classpathentry kind="lib" path="WEB-INF/lib/jcaptcha-1.0.jar"/>
+	<classpathentry kind="lib" path="WEB-INF/lib/jdom-1.1.3.jar"/>
+	<classpathentry kind="lib" path="WEB-INF/lib/jsoup-1.7.2.jar"/>
+	<classpathentry kind="lib" path="WEB-INF/lib/jta-1.1.jar"/>
+	<classpathentry kind="lib" path="WEB-INF/lib/junit-dep-4.10.jar"/>
+	<classpathentry kind="lib" path="WEB-INF/lib/log4j-1.2.16.jar"/>
+	<classpathentry kind="lib" path="WEB-INF/lib/lucene-3.5.0.jar"/>
+	<classpathentry kind="lib" path="WEB-INF/lib/mail-1.4.4.jar"/>
+	<classpathentry kind="lib" path="WEB-INF/lib/mchange-commons-java-0.2.3.4.jar"/>
+	<classpathentry kind="lib" path="WEB-INF/lib/mysql-jdbc-5.1.25.jar"/>
+	<classpathentry kind="lib" path="WEB-INF/lib/oracle-jdbc-11.2.jar"/>
+	<classpathentry kind="lib" path="WEB-INF/lib/pjl-comp-filter-1.7.jar"/>
+	<classpathentry kind="lib" path="WEB-INF/lib/poi-3.8.jar"/>
+	<classpathentry kind="lib" path="WEB-INF/lib/servlet-api.jar"/>
+	<classpathentry kind="lib" path="WEB-INF/lib/shiro-1.2.1.jar" sourcepath="D:/fujitsu/sofware/apache-maven-3.5.2-bin/mavenrepo/org/apache/shiro/shiro-all/1.2.1/shiro-all-1.2.1-sources.jar"/>
+	<classpathentry kind="lib" path="WEB-INF/lib/slf4j-api-1.6.4.jar"/>
+	<classpathentry kind="lib" path="WEB-INF/lib/slf4j-log4j12-1.6.4.jar"/>
+	<classpathentry kind="lib" path="WEB-INF/lib/spring-aop-3.2.2.jar"/>
+	<classpathentry kind="lib" path="WEB-INF/lib/spring-beans-3.2.2.jar" sourcepath="D:/fujitsu/sofware/java/spring-framework-3.2.2.RELEASE.zip">
+		<attributes>
+			<attribute name="source_encoding" value="UTF-8"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry kind="lib" path="WEB-INF/lib/spring-context-3.2.2.jar"/>
+	<classpathentry kind="lib" path="WEB-INF/lib/spring-context-support-3.2.2.jar"/>
+	<classpathentry kind="lib" path="WEB-INF/lib/spring-core-3.2.2.jar"/>
+	<classpathentry kind="lib" path="WEB-INF/lib/spring-expression-3.2.2.jar"/>
+	<classpathentry kind="lib" path="WEB-INF/lib/spring-jdbc-3.2.2.jar"/>
+	<classpathentry kind="lib" path="WEB-INF/lib/spring-orm-3.2.2.jar"/>
+	<classpathentry kind="lib" path="WEB-INF/lib/spring-test-3.2.2.jar"/>
+	<classpathentry kind="lib" path="WEB-INF/lib/spring-tx-3.2.2.jar"/>
+	<classpathentry kind="lib" path="WEB-INF/lib/spring-web-3.2.2.jar"/>
+	<classpathentry kind="lib" path="WEB-INF/lib/spring-webmvc-3.2.2.jar"/>
+	<classpathentry kind="lib" path="WEB-INF/lib/sqlserver-jdbc-2.0.jar"/>
+	<classpathentry kind="lib" path="WEB-INF/lib/sqlserver-jdbc-4.0.jar"/>
+	<classpathentry kind="lib" path="WEB-INF/lib/validation-api-1.0.jar"/>
+	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER"/>
+	<classpathentry kind="lib" path="WEB-INF/lib/commons-httpclient-3.1.jar"/>
+	<classpathentry kind="lib" path="WEB-INF/lib/json-lib-2.4-jdk15.jar"/>
+	<classpathentry kind="lib" path="WEB-INF/lib/ezmorph-1.0.6.jar"/>
+	<classpathentry kind="output" path="WEB-INF/classes"/>
+</classpath>

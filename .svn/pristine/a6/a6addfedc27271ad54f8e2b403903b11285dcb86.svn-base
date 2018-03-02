@@ -1,0 +1,138 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="content-type" content="text/html; charset=utf-8" />
+<title>${message("admin.product.add")}</title>
+
+
+<link href="${base}/resources/admin/css/common.css" rel="stylesheet" type="text/css" />
+<script type="text/javascript" src="${base}/resources/admin/js/jquery.js"></script>
+<script type="text/javascript" src="${base}/resources/admin/js/jquery.tools.js"></script>
+<script type="text/javascript" src="${base}/resources/admin/js/jquery.validate.js"></script>
+<script type="text/javascript" src="${base}/resources/admin/editor/kindeditor.js"></script>
+<script type="text/javascript" src="${base}/resources/admin/js/common.js"></script>
+<script type="text/javascript" src="${base}/resources/admin/js/input.js"></script>
+
+<script type="text/javascript">
+$().ready(function() {
+
+	var $inputForm = $("#inputForm");
+	var $productCategoryId = $("#productCategoryId");
+	
+	[@flash_message /]
+	
+	// 表单验证
+	$inputForm.validate({
+		rules: {
+			productCategoryId: "required",
+			name: "required",
+			sn: {
+				pattern: /^[0-9a-zA-Z_-]+$/,
+				remote: {
+					url: "check_sn.ehtml",
+					cache: false
+				}
+			}
+		},
+		messages: {
+			sn: {
+				pattern: "${message("admin.validate.illegal")}",
+				remote: "${message("admin.validate.exist")}"
+			}
+		}
+	});
+	
+});
+</script>
+</head>
+<body>
+	<div class="path">
+		<a href="${base}/admin/common/index.ehtml">${message("admin.path.index")}</a> &raquo; ${message("admin.product.add")}
+	</div>
+	<form id="inputForm" action="save.ehtml" method="post" enctype="multipart/form-data">
+		<ul id="tab" class="tab">
+			<li>
+				<input type="button" value="${message("admin.product.base")}" />
+			</li>
+		</ul>
+		<table class="input tabContent">
+			<tr>
+				<th>
+					${message("Product.productCategory")}:
+				</th>
+				<td>
+					<select id="productCategoryId" name="productCategoryId">
+						[#list productCategoryTree as productCategory]
+							<option value="${productCategory.id}">
+								[#if productCategory.grade != 0]
+									[#list 1..productCategory.grade as i]
+										&nbsp;&nbsp;
+									[/#list]
+								[/#if]
+								${productCategory.name}
+							</option>
+						[/#list]
+					</select>
+				</td>
+			</tr>
+			<tr>
+				<th>
+					<span class="requiredField">*</span>${message("Product.name")}:
+				</th>
+				<td>
+					<input type="text" name="name" class="text" maxlength="200" />
+				</td>
+			</tr>
+			<tr>
+				<th>
+					${message("Product.sn")}:
+				</th>
+				<td>
+					<input type="text" name="sn" class="text" maxlength="100" title="${message("admin.product.snTitle")}" />
+				</td>
+			</tr>
+			<tr>
+				<th>
+					${message("Product.shop")}:
+				</th>
+				<td>
+					<select name="shopId">
+						<option value="">${message("admin.common.choose")}</option>
+						[#list shops as shop]
+							<option value="${shop.id}">
+								${shop.name}
+							</option>
+						[/#list]
+					</select>
+				</td>
+			</tr>
+			<tr>
+				<th>
+					${message("admin.common.setting")}:
+				</th>
+				<td>
+					<label>
+						<input type="checkbox" name="isMarketable" value="true" checked="checked" />${message("Product.isMarketable")}
+						<input type="hidden" name="_isMarketable" value="false" />
+					</label>
+					<label>
+						<input type="checkbox" name="isList" value="true" checked="checked" />${message("Product.isList")}
+						<input type="hidden" name="_isList" value="false" />
+					</label>
+				</td>
+			</tr>
+		</table>
+		<table class="input">
+			<tr>
+				<th>
+					&nbsp;
+				</th>
+				<td>
+					<input type="submit" class="button" value="${message("admin.common.submit")}" />
+					<input type="button" class="button" value="${message("admin.common.back")}" onclick="location.href='list.ehtml'" />
+				</td>
+			</tr>
+		</table>
+	</form>
+</body>
+</html>

@@ -1,0 +1,21 @@
+
+log4j.rootLogger=ERROR,stdout,database
+### \u628A\u65E5\u5FD7\u4FE1\u606F\u8F93\u51FA\u5230\u63A7\u5236\u53F0 ###
+#\u65E5\u5FD7\u4FE1\u606F\u5C06\u5199\u5230\u63A7\u5236\u53F0
+log4j.appender.stdout=org.apache.log4j.ConsoleAppender
+#\u4FE1\u606F\u6253\u5370\u5230System.out\u4E0A
+log4j.appender.stdout.Target=System.out
+log4j.appender.stdout.layout=org.apache.log4j.PatternLayout
+#\u6307\u5B9A\u8F93\u51FA\u683C\u5F0F\uFF1A\u663E\u793A\u65E5\u671F\u548Clog\u4FE1\u606F
+log4j.appender.stdout.layout.ConversionPattern=%d{yyyy-MM-dd HH:mm:ss}  %m%n
+### \u628A\u65E5\u5FD7\u4FE1\u606F\u5199\u5165\u5230\u6570\u636E\u5E93###  
+log4j.appender.database=org.apache.log4j.ConsoleAppender  
+log4j.appender.database.layout=org.apache.log4j.PatternLayout  
+log4j.appender.database.layout.ConversionPattern=%d{yyyy-MM-dd HH:mm:ss:SSS}[%p]: %m%n
+log4j.appender.database=org.apache.log4j.jdbc.JDBCAppender
+log4j.appender.database.driver=com.mysql.jdbc.Driver
+log4j.appender.database.URL=jdbc:mysql://localhost:3306/cloudprinter?useUnicode=true&characterEncoding=UTF-8
+log4j.appender.database.user=root
+log4j.appender.database.password=nfet123.
+log4j.appender.database.sql=insert into cloudprint_log(level,category,thread,time,location,note) values('%p','%c','%t','%d{yyyy-MM-dd HH:mm:ss:SSS}','%l','%m')
+log4j.appender.database.layout=org.apache.log4j.PatternLayout
